@@ -1,11 +1,102 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Benim Web Sitem</title>
+    <meta charset="UTF-8">
+    <title>Tek Sayfa Web Sitesi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background: #1e88e5;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            background: #1e88e5;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1565c0;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Merhaba 👋</h1>
-  <p>Bu site GitHub Pages ile ücretsiz yayında.</p>
+
+<header>
+    <h1>Benim Tek Sayfa Web Sitem</h1>
+    <p>Chrome üzerinden açılabilir örnek web sitesi</p>
+</header>
+
+<section>
+
+    <div class="card">
+        <h2>Hakkında</h2>
+        <p>
+            Bu site tek bir HTML dosyasından oluşur.
+            Herhangi bir sunucuya gerek olmadan Chrome’da çalışır.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Buton Örneği</h2>
+        <p>Butona tıklandığında JavaScript çalışır.</p>
+        <button onclick="mesajGoster()">Tıkla</button>
+    </div>
+
+    <div class="card">
+        <h2>İletişim</h2>
+        <p>Email: ornek@mail.com</p>
+        <p>Telefon: 05xx xxx xx xx</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2025 Tek Sayfa Site
+</footer>
+
+<script>
+    function mesajGoster() {
+        alert("Buton çalışıyor! 🎉");
+    }
+</script>
+
 </body>
 </html>
